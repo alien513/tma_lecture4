@@ -1,0 +1,109 @@
+body {
+  padding: 2vw;
+  margin: 0;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 2vw;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: 600;
+  color: darkmagenta;
+}
+
+ol {
+  text-align: left;
+}
+
+.hidden {
+  padding: 0;
+  margin: 0;
+  height: 0;
+  overflow: hidden;
+  display: none;
+}
+
+main {
+  min-height: 140px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  border: 1px solid darkmagenta;
+}
+
+
+main div {
+  display: block;
+  border: 1px solid red;
+  margin: .1vw;
+  background-color: tomato;
+  padding: .5rem;
+  line-height: 1rem;
+  font-size: 0.8rem;
+}
+
+main div p {
+  padding: 0;
+  margin: 0;
+}
+
+form {
+  display: grid;
+  grid-template-columns: [users] auto [posts] auto [space] 1fr;
+  grid-gap: 1rem;
+  padding:0;
+  margin:0;
+  padding-top: 1vw;
+}
+
+button {
+  color: white;
+  background-color: darkmagenta;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  border: 1px solid darkmagenta;
+  border-radius: 6px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  transition: all .5s ease-in-out;
+  transition-property: all;
+}
+
+button:disabled {
+  color: rgba(125, 125, 125, .33);
+  background-color: white;
+}
+
+button:hover {
+  text-shadow: #cccccc 0px 0px 2px;
+  transition: all .5s ease-in-out;
+  transition-property: all;
+}
+
+button[name="users"] {
+  grid-column: users;
+  grid-row: auto;
+}
+
+button[name="posts"] {
+  grid-column: posts;
+  grid-row: auto;
+}
+
+.post {
+  width: 100%;
+}
